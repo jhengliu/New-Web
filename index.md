@@ -1,6 +1,6 @@
 ## Welcome to YCH website
 
-<!-- You can use the [editor on GitHub](https://github.com/jhengliu/tee/edit/master/index.md) to maintain and preview the content for your website in Markdown files. -->
+<!-- You can use the [editor on GitHub](https://github.com/jhengliu/tee/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -25,13 +25,14 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+-->
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13177341_883733221755348_3788928508532700048_n.jpg?oh=d8da7efc5756c123e4662041b274e70e&oe=5ABBF33A)
 
-## 我們一起來錄音～
+## *我們一起來錄音～*
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13335578_894160290712641_8066235228498622809_n.jpg?oh=0dcb05483f0c3218baf547196cc7f83d&oe=5AEE155E)
 
 欲了解更多信息，請參閱[facebook](https://www.facebook.com/YCH-882438541884816/)。
