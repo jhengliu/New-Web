@@ -28,33 +28,14 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-For more details see [youtube](https://www.youtube.com/watch?v=JwjBbWQs71k).
+
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13177341_883733221755348_3788928508532700048_n.jpg?oh=d8da7efc5756c123e4662041b274e70e&oe=5ABBF33A)
 
 ## 我們一起來錄音～
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13335578_894160290712641_8066235228498622809_n.jpg?oh=0dcb05483f0c3218baf547196cc7f83d&oe=5AEE155E)
 
-public static void main(String[] args) throws IOException {
-    YouTube youtube = getYouTubeService();
-    try {
-        HashMap<String, String> parameters = new HashMap<>();
-        parameters.put("part", "snippet,contentDetails");
-        parameters.put("channelId", "UC_x5XG1OV2P6uZZ5FSM9Ttw");
-        parameters.put("maxResults", "25");
+欲了解更多信息，請參閱facebook [facebook](https://www.youtube.com/watch?v=JwjBbWQs71k)。
 
-        YouTube.Activities.List activitiesListRequest = youtube.activities().list(parameters.get("part").toString());
-        if (parameters.containsKey("channelId") && parameters.get("channelId") != "") {
-            activitiesListRequest.setChannelId(parameters.get("channelId").toString());
-        }
-
-        if (parameters.containsKey("maxResults")) {
-            activitiesListRequest.setMaxResults(Long.parseLong(parameters.get("maxResults").toString()));
-        }
-
-        ActivityListResponse response = activitiesListRequest.execute();
-        System.out.println(response);
-    }
-}
 
 東水 | 東中
 ------------ | -------------
