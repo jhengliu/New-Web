@@ -31,6 +31,28 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 For more details see [youtube](https://www.youtube.com/watch?v=JwjBbWQs71k).
 ![GitHub Logo](https://lh3.googleusercontent.com/0GWU3a1kRvrnFRirq3s3L4UclvRaNdhurffuK5mTGReJgXeveqhA4Nw4SVtqdmjsox-xRoVNbWU4Vy28jCBQJ1Nx7go2cmpLjkd-cnf_L4wb1jqATVg3qH7bW8AGT_1ntBgHYsrj69dhfp1Qd8nx4ub7saDhbUBeGE5FRlEZFD4blRfiDeKGqVJ_tLI7rDcpBGyuT-sFG5UhxgnkhbY6TSO2xu22-0U9GGn75ZY3ZeSGNgG98lhiaU4-hw38jzFYASvupSkWm4ZtYWxGp6EGyzIi9eUbAtGmgyiEuaer5gR9XsBv7TbiYPXpMdl3uORbNsEnlbLreR5wVjcM53-Gc09RRMjeztjukv2lWSdl0ToA1RdkG_oTKgWoe1i_EE-1wyhM09OamJlghWsEQucKZ0jgzCmLtJBbkYZP3GamlGetAnAibBbZT8TnrTxctiIO_veDS9Hi6kGecrAOlMtKnzFDgo9DYDgh5tt4aXj_BzIiA2WywmjNKPwpI3uOUg3YM1rYp1eQWdhQwAOjfmVKbqH7X_BZ6oTlEQ7NT70o7JXqwnwBztKrISiYbf9pLzuGg2xHYNy-fu9JqrcCmrK-DXVQK3w2fM5z8fYHrfM=w1350-h1012-no)
 
+public static void main(String[] args) throws IOException {
+    YouTube youtube = getYouTubeService();
+    try {
+        HashMap<String, String> parameters = new HashMap<>();
+        parameters.put("part", "snippet,contentDetails");
+        parameters.put("channelId", "UC_x5XG1OV2P6uZZ5FSM9Ttw");
+        parameters.put("maxResults", "25");
+
+        YouTube.Activities.List activitiesListRequest = youtube.activities().list(parameters.get("part").toString());
+        if (parameters.containsKey("channelId") && parameters.get("channelId") != "") {
+            activitiesListRequest.setChannelId(parameters.get("channelId").toString());
+        }
+
+        if (parameters.containsKey("maxResults")) {
+            activitiesListRequest.setMaxResults(Long.parseLong(parameters.get("maxResults").toString()));
+        }
+
+        ActivityListResponse response = activitiesListRequest.execute();
+        System.out.println(response);
+    }
+}
+
 東水 | 東中
 ------------ | -------------
 Content from cell 1 | Content from cell 2
