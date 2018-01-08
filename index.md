@@ -31,7 +31,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 For more details see [youtube](https://www.youtube.com/watch?v=JwjBbWQs71k).
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13177341_883733221755348_3788928508532700048_n.jpg?oh=d8da7efc5756c123e4662041b274e70e&oe=5ABBF33A)
 
-##我們一起來錄音～
+## 我們一起來錄音～
 ![GitHub Logo](https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/13335578_894160290712641_8066235228498622809_n.jpg?oh=0dcb05483f0c3218baf547196cc7f83d&oe=5AEE155E)
 
 public static void main(String[] args) throws IOException {
